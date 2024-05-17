@@ -115,7 +115,7 @@ const Subscribe = () => {
             : 
             null }
 
-            <h5 className="font-semibold text-[#00a4f2 text-[10px] text-center mt-[15px] mb-[10px]">By subscribing to Grace Access Church Newsletter, you consent to receiving recurring atomated messages (i.e. service reminders, upcoming events etc.) via your emial.</h5>
+            <h5 className="font-semibold text-[#00a4f2 text-[10px] text-center mt-[15px] mb-[10px] w-full md:w-[60%]">By subscribing to Grace Access Church Newsletter, you consent to receiving recurring automated messages (i.e. service reminders, upcoming events etc.) via your emial.</h5>
         </div>
     </div>
   )

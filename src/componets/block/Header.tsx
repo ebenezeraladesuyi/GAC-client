@@ -27,8 +27,8 @@ const Header = () => {
 
             {/* <div className='flex justify-between items-center w-full'> */}
             <NavLink to='/'>
-                <div className='lg:hidde p-2 rounded-md bg-whit shadow-m w-[100px] md:w-[120px] z-40'>
-                    <img className="w-full " src={logo} alt="W2H-logo" />
+                <div className='lg:hidde p-1 rounded-md shadow-m w-[100px md: w-[110px] z-40 h- py-0'>
+                    <img className="w-full  " src={logo} alt="W2H-logo" />
                     {/* <h5 className='text-black font-bold'>GAC</h5> */}
                 </div>
             </NavLink>

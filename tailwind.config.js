@@ -20,7 +20,7 @@ export default {
         'lady' : "url('/src/assets/images/sermons/lady2.jpg')",
         'be' : "url('/src/assets/images/Believe/testiBg.png')",
         'mobile-bg' : "url('/src/assets/images/hero/welcomers.jpg')",
-        // 'bg2' : "url('/src/assets/images/bg2.jpg')",
+        'member-bg' : "url('/src/assets/images/membership/ADE_8295.jpg')",
       }
     },
   },

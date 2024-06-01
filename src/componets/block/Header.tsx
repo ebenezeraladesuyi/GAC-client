@@ -67,7 +67,7 @@ const Header = () => {
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Contact Us</ol>
                     </NavLink>
 
-                    <NavLink to="/">
+                    <NavLink to="/becomeamember">
                         <button className=' px-4 py-3 bg-[#23a1db] border-none hover:bg-[#063e60] text-white font-semibold animate-puls ml-[50px] rounded-[60px] transition-all duration-300 ease-in-out hover:px- hover:py-'>
                             Become A Member
                         </button>
@@ -125,7 +125,7 @@ const Header = () => {
                             <ol className='text-white  hover:text-[#eedfb0s] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Contact Us</ol>
                         </NavLink>
 
-                        <NavLink to="/firststep">
+                        <NavLink to="/becomeamember">
                             <button className='w-[150px bg-[#80c41c] border-none hover:bg-[#3d82b3] text-white font-semibold animate-pulse  rounded-[60px]'>
                                 Become A Member
                             </button>

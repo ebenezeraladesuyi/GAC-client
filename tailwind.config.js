@@ -19,7 +19,7 @@ export default {
         'raa' : "url('/src/assets/images/sermons/RAA-4.png')",
         'lady' : "url('/src/assets/images/sermons/lady2.jpg')",
         'be' : "url('/src/assets/images/Believe/testiBg.png')",
-        // 'mobile-bg' : "url('/src/assets/images/vol-mobile-bg.avif')",
+        'mobile-bg' : "url('/src/assets/images/hero/welcomers.jpg')",
         // 'bg2' : "url('/src/assets/images/bg2.jpg')",
       }
     },

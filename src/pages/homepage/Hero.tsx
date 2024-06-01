@@ -8,7 +8,7 @@ import mixlr from "../../assets/images/logo/mixlr.png";
 
 const Hero = () => {
   return (
-    <motion.div className="w-full h-screen flex justify-center items-center bg-hero-bg bg-center bg-cover relative font-pop"
+    <motion.div className="w-full h-screen flex justify-center items-center bg-mobile-bg md:bg-hero-bg bg-center bg-cover relative font-pop"
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.2 }}

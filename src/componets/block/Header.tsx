@@ -49,14 +49,14 @@ const Header = () => {
                     </NavLink>
 
                     
-                    <Link offset={-100} smooth={true} duration={500} to="footer">
+                    <NavLink to="aboutus">
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>About Us</ol>
-                    </Link>
+                    </NavLink>
 
-                    <Link offset={-100} smooth={true} duration={500} to="services">
-                    {/* <NavLink to='/'> */}
+                    {/* <Link offset={-100} smooth={true} duration={500} to="services"> */}
+                    <NavLink to='/'>
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Departments</ol>
-                    </Link>
+                    </NavLink>
 
                     <NavLink to='/'>
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Give Online</ol>
@@ -107,9 +107,9 @@ const Header = () => {
                             <ol className='text-white hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Home</ol>
                         </NavLink>
 
-                        <Link offset={-100} smooth={true} duration={500} to="footer">
+                        <NavLink to="/aboutus">
                             <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>About Us</ol>
-                        </Link>
+                        </NavLink>
 
                         <Link  offset={-100} smooth={true} duration={500} to="services">
                         {/* <NavLink to='/'> */}

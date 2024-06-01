@@ -14,7 +14,7 @@ const Hero = () => {
     transition={{ duration: 0.8, delay: 0.2 }}
     >
 
-        <div className="absolute bg-black w-full h-full opacity-20 "></div>
+        <div className="absolute bg-black w-full h-full opacity-35 "></div>
 
         <div className="w-[90%] z-30 flex flex-col items-center md:items-start gap-5 mt-[100px] ">
 

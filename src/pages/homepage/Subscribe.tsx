@@ -72,7 +72,7 @@ const Subscribe = () => {
     // })
 
   return (
-    <div id="" className="w-full h-[100vh  flex justify-center items-center font-mont bg-blac relative py-[30px] md:pt-[45px] shadow-md">
+    <div id="" className="w-full h-[100vh  flex justify-center items-center bg-blac relative py-[30px] md:pt-[45px] shadow-md font-pop" >
         <div className="w-[85%] flex flex-col justify-center items-center md:justify-between ">
             <h5 className="md:w-[60%] lg:w-[50%] font-semibold text-[14px] text-[#00a4f2 mb-[10px] text-center font-bold">DO YOU WANT REGULAR UPDATES FROM US?</h5>
 

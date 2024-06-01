@@ -6,7 +6,7 @@ import { LuDownloadCloud } from "react-icons/lu";
 
 const Sermons = () => {
   return (
-    <div className="w-full py-[30px] lg:h-[74vh] bg-lad bg-center bg-cover bg-black flex flex-col items-center">
+    <div className="w-full py-[30px] lg:h-[74vh] bg-lad bg-center bg-cover bg-black flex flex-col items-center font-pop">
 
         <h6 className="lg:hidden text-white w-[70%]  text-center  font-bold text-[20px] md:text-[25px]">DOWNLOAD & LISTEN TO OUR MESSAGES</h6>
 

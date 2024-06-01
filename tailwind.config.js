@@ -21,6 +21,9 @@ export default {
         'be' : "url('/src/assets/images/Believe/testiBg.png')",
         'mobile-bg' : "url('/src/assets/images/hero/welcomers.jpg')",
         'member-bg' : "url('/src/assets/images/membership/ADE_8295.jpg')",
+        'about-bg' : "url('/src/assets/images/about/ADE_8239.jpg')",
+        'about-bg2' : "url('/src/assets/images/about/ADE_8238.jpg')",
+        'about-bg3' : "url('/src/assets/images/about/ADE_8171.jpg')",
       }
     },
   },

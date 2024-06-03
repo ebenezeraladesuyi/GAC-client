@@ -19,9 +19,20 @@ const Footer = () => {
             Volatic Academy. We are a supportive and inclusive Academy, where every student is inspired to dream big, while challenging them and the status quo, equipping them with business skill, technology skills, leadership skills and life skills.
           </h6> */}
 
-          <h5 className="text-[12px] lg:text-[14px] text-cente mb-[20px] flex flex-col text-[#50519f]">
+          <h5 className="text-[11px] lg:text-[14px] text-cente mb-[0px] flex flex-col text-[#50519f]">
             <span className="text-[#80c41c]">Address:</span>2nd Floor, Vita Foam Building, Adebayo, Ado-Ekiti.  <span className="text-[#80c41c]">Phone:</span> +234 (0) 703 775 0000 || +234 (0) 814 888 5333 <span className="text-[#80c41c]">Email:</span> graceaccesschurch@gmail.com
           </h5>
+
+          <div className="flex flex-col gap-3 text-[11px] md:text-[14px] text-[#50519f]">
+            <h6 className="cursor-pointr mb-[0px] text-[16px] md:text-[18px] font-bold md:mt-[20px] text-[#80c41c]">Service Schedule</h6>
+            <h6 className="cursor-pointr">Sunday Service <span>8:30am</span></h6>
+            <h6 className="cursor-pointr">Mid-Week Service (Wednesdays) <span>5:00pm</span></h6>
+            {/* <h6 className="cursor-pointe">Product Engineering</h6>
+            <h6 className="cursor-pointr">Product Strategy</h6>
+            <h6 className="cursor-pointr">Creative Design</h6>
+            <h6 className="cursor-pointr">Digital Marketing</h6>
+            <h6 className="cursor-poiner">Professional Training</h6> */}
+          </div>
 
           <div className="flex gap-3 items-center">
             <a href="" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center bg-[#23a1db] text-white  rounded-full">
@@ -40,14 +51,15 @@ const Footer = () => {
         </div>
 
         {/* <div className="flex flex-col font-semibold gap-3 text-[13px] md:text-[15px] text-[#50519f] md:ml-[30px]">
-          <h6 className="cursor-pointr mb-[20px] text-[16px] md:text-[18px] font-bold md:mt-[20px]">Services</h6>
-          <h6 className="cursor-pointr">Product Design</h6>
-          <h6 className="cursor-pointe">Product Engineering</h6>
+          <h6 className="cursor-pointr mb-[0px] text-[16px] md:text-[18px] font-bold md:mt-[20px]">Service Schedule</h6>
+          <h6 className="cursor-pointr">Sunday Service <span>8:30am</span></h6>
+          <h6 className="cursor-pointr">Mid-Week Service (Wednesdays) <span>5:00pm</span></h6>
+          {/* <h6 className="cursor-pointe">Product Engineering</h6>
           <h6 className="cursor-pointr">Product Strategy</h6>
           <h6 className="cursor-pointr">Creative Design</h6>
           <h6 className="cursor-pointr">Digital Marketing</h6>
-          <h6 className="cursor-poiner">Professional Training</h6>
-        </div> */}
+          <h6 className="cursor-poiner">Professional Training</h6> */}
+        {/* </div> */} 
 
       </div>
 

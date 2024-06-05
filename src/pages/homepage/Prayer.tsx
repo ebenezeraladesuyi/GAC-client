@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { NavLink } from "react-router-dom"
 import PrayerCard from "../../componets/static/PrayerCard"
 
 const Prayer = () => {
@@ -12,12 +13,14 @@ const Prayer = () => {
 
                 <div className="text-[#1515157e]"></div>
 
-                <div className="mb-[20px]">
-                    <PrayerCard 
-                        content="Share your Testimony with us"
-                        buttonContent="Share With Us"
-                    />
-                </div>
+                <NavLink to="/contact">
+                    <div className="mb-[20px]">
+                        <PrayerCard 
+                            content="Share your Testimony with us"
+                            buttonContent="Share With Us"
+                        />
+                    </div>
+                </NavLink>
 
             </div>
 
@@ -27,12 +30,14 @@ const Prayer = () => {
 
                 <div className="text-[#1515157e]"></div>
 
-                <div className="mb-[20px]">
-                    <PrayerCard 
-                        content="Want to send a Prayer Request?"
-                        buttonContent="Send Prayer Request"
-                    />
-                </div>
+                <NavLink to="/contact">
+                    <div className="mb-[20px]">
+                        <PrayerCard 
+                            content="Want to send a Prayer Request?"
+                            buttonContent="Send Prayer Request"
+                        />
+                    </div>
+                </NavLink>
 
             </div>
 
@@ -42,12 +47,14 @@ const Prayer = () => {
 
                 <div className="text-[#1515157e]"></div>
 
-                <div className="mb-[20px]">
-                    <PrayerCard 
-                        content="Join Grace Access Membership Class (GAMA)"
-                        buttonContent="Start Here"
-                    />
-                </div>
+                <NavLink to="/becomeamember">
+                    <div className="mb-[20px]">
+                        <PrayerCard 
+                            content="Join Grace Access Membership Class (GAMA)"
+                            buttonContent="Start Here"
+                        />
+                    </div>
+                </NavLink>
 
             </div>
         </div>

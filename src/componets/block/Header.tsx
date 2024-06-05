@@ -14,7 +14,7 @@ const Header = () => {
     }
 
   return (
-    <div className={`w-full h-[75px] lg:h-[130px flex lg:justify-center items-center shadow-m font-pop fixed z-40 bg-white text-white  shadow-md `}>
+    <div className={`w-full h-[75px] lg:h-[130px flex lg:justify-center items-center shadow-m font-pop fixed z-40 bg-white text-white  lg:shadow-md `}>
         <div className="w-[90%] h-full flex flex-co justify-between items-center  ml-[20px] lg:ml-0">
 
             {/* <div className='hidden w-[100%] h-full lg:flex justify-between items-center'>

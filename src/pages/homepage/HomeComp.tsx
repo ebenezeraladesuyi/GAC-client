@@ -9,7 +9,7 @@ import Subscribe from "./Subscribe"
 
 const HomeComp = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Hero />
       <Prayer />
       <Sermons />

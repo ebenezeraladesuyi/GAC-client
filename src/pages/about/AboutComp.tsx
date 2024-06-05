@@ -5,7 +5,7 @@ import AboutPastor from "./AboutPastor"
 
 const AboutComp = () => {
   return (
-    <div>
+    <div className="bg-white">
         <About />
         <AboutPastor />
     </div>

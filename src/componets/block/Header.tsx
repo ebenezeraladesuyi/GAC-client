@@ -49,7 +49,7 @@ const Header = () => {
                     </NavLink>
 
                     
-                    <NavLink to="aboutus">
+                    <NavLink to="/aboutus">
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>About Us</ol>
                     </NavLink>
 

@@ -73,7 +73,7 @@ const Sermons = () => {
                 <h6 className="hidden lg:block text-[28px] leading-[35px] font-bold">DOWNLOAD & LISTEN TO OUR MESSAGES</h6>
 
                 <div className=" mt-[30px]">
-                    {audio.slice(0, 5).map((aud) => (
+                    {audio && audio.slice(0, 5).map((aud) => (
                     <div key={aud?._id} className="w-full flex justify-between items-center border-[#848282fe] border-[1px] py- h-[60px]">
                         <div className="w-[10%] flex justify-center bg-[#4c4b4bfe] h-full font-bold bg- py-3 items-center">
                             <FaMusic />

@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import { NavLink } from "react-router-dom"
+
 const Beleieve = () => {
   return (
     <div className="w-full h-[50vh] flex justify-center items-center bg-be bg-center bg-cover relative font-pop">
@@ -8,7 +10,7 @@ const Beleieve = () => {
                 Ready to Begin A New Experience with Christ?
             </h6>
 
-            <a href="" className="p-2 px-5 bg-[#23a1db] text-white rounded-[20px] animate-pulse">Become A Believer</a>
+            <NavLink to="/becomeamember"><a href="" className="p-2 px-5 bg-[#23a1db] text-white rounded-[20px] animate-pulse">Become A Believer</a></NavLink>
         </div>
     </div>
   )

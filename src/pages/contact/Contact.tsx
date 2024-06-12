@@ -25,7 +25,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const response = await axios.post(`${url}/contact/createcontactmail`, formData);
-      console.log('Member created successfully:', response.data);
+      console.log('message sent successfully:', response.data);
       // Reset form data
       setFormData({
         reason: '',
@@ -39,8 +39,8 @@ const Contact = () => {
     toast.success('Message Sent Successfully')
 
     } catch (err) {
-      console.error('Error creating member:', err);
-      setError('Failed to create member. Please try again.');
+      console.error('Error sending message:', err);
+      setError('Failed to send mail. Please try again.');
 
     //   for error registration notification
     toast.error('Error Sending Message. Please, Try Again.')
@@ -104,7 +104,7 @@ const Contact = () => {
           </button>
           )}
                     
-          {error && <p>{error}</p>}
+          {error && <p className='text-[6px]'>{error}</p>}
 
         </form>
 

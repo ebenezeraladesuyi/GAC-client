@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo/grace-logo.png";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Header = () => {
 
@@ -59,6 +59,10 @@ const Header = () => {
                     </NavLink>
 
                     <NavLink to='/'>
+                        <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Gallery</ol>
+                    </NavLink>
+
+                    <NavLink to='/'>
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Give Online</ol>
                     </NavLink>
 
@@ -111,10 +115,14 @@ const Header = () => {
                             <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>About Us</ol>
                         </NavLink>
 
-                        <Link  offset={-100} smooth={true} duration={500} to="services">
-                        {/* <NavLink to='/'> */}
+                        {/* <Link  offset={-100} smooth={true} duration={500} to="services"> */}
+                        <NavLink to='/'>
                             <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Departments</ol>
-                        </Link>
+                        </NavLink>
+
+                        <NavLink to='/'>
+                            <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Gallery</ol>
+                        </NavLink>
 
                         <NavLink to='/'>
                             <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Give Online</ol>

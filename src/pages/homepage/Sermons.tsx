@@ -79,7 +79,7 @@ const Sermons = () => {
                             <FaMusic />
                         </div>
 
-                        <h6 className="w-[80%] border-[1px border-white flex justify-center items-center h-full py-3 px-1 md:py-2 text-white bg-[#063e60] text-[10px] md:text-[16px] overflow-x-scrol md:">
+                        <h6 className="w-[80%] border-[1px border-white flex justify-center items-center h-full py-3 px-1 md:py-2 text-white bg-[#063e60] text-[10px] md:text-[13px] overflow-x-scrol md:">
                             {aud?.title} -- {aud?.author}
                         </h6>
 

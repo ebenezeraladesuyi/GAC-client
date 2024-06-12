@@ -76,28 +76,28 @@ const Hero = () => {
             </NavLink>
 
             <div className="flex gap-3 items-center">
-                <motion.a href="" className="text-white text-[20px] md:text-[30px]"
+                <motion.a href="https://instagram.com/graceaccesschurch" className="text-white text-[20px] md:text-[30px]"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 2.2 }}
             >
                     <FaSquareInstagram />
                 </motion.a>
-                <motion.a href="" className="text-white text-[20px] md:text-[30px]"
+                <motion.a href="https://facebook.com/graceaccesschurch" className="text-white text-[20px] md:text-[30px]"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 2.5 }}
             >
                     <FaFacebookSquare />
                 </motion.a>
-                <motion.a href="" className="text-white text-[20px] md:text-[30px]"
+                <motion.a href="https://t.me/graceaccesschurch" className="text-white text-[20px] md:text-[30px]"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 2.8 }}
             >
                     <FaTelegram />
                 </motion.a>
-                <motion.a href="" className="text-white w-[19px] md:w-[27px]"
+                <motion.a href="https://graceaccesschurch.mixlr.com" className="text-white w-[19px] md:w-[27px]"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 3.1 }}

@@ -5,16 +5,18 @@ import HomeLayout from "../layout/HomeLayout";
 import MemberLayout from "../layout/MemberLayout";
 import AboutLayout from "../layout/AboutLayout";
 import ContactLayout from "../layout/ContactLayout";
-// import Contact from "../pages/contact/Contact";
-// import AboutComp from "../pages/about/AboutComp";
-// import Member from "../pages/Member/Member";
-// import HomeComp from "../pages/homepage/HomeComp";
+import GalleryLayout from "../layout/GalleryLayout";
+// import PaymentLayout from "../layout/PaymentLayout";
+import AllSermonLayout from "../layout/AllSermonLayout";
 
 
 const HomeComp = lazy(() => import("../pages/homepage/HomeComp"));
 const Member = lazy(() => import("../pages/Member/Member"));
 const AboutComp = lazy(() => import("../pages/about/AboutComp"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
+const Gallery = lazy(() => import("../pages/gallery/Gallery"));
+// const PaymentForm = lazy(() => import("../pages/payment/PaymentForm"));
+const AllSermon = lazy(() => import("../pages/allSermon/AllSermon"));
 
 
 export const element = createBrowserRouter([
@@ -55,6 +57,36 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <Contact />
+            }
+        ]
+    },
+    {
+        path:"/gallery",
+        element: <GalleryLayout />,
+        children: [
+            {
+                index: true,
+                element: <Gallery />
+            }
+        ]
+    },
+    // {
+    //     path:"/payonline",
+    //     element: <PaymentLayout />,
+    //     children: [
+    //         {
+    //             index: true,
+    //             element: <PaymentForm />
+    //         }
+    //     ]
+    // },
+    {
+        path:"/sermons",
+        element: <AllSermonLayout />,
+        children: [
+            {
+                index: true,
+                element: <AllSermon />
             }
         ]
     },

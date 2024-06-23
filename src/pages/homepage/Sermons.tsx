@@ -1,13 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // import React from 'react'
 
-import phone from "../../assets/images/sermons/lady4.png";
+import phone from "../../assets/images/sermons/iPhone-2.png";
 import { FaMusic } from "react-icons/fa";
 import { LuDownloadCloud } from "react-icons/lu";
 import { iAudio } from "../../types/interface";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { url } from "../../utils/Api";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -88,6 +90,13 @@ const Sermons = () => {
                         </div>
                     </div>
                     ))}
+
+                    <NavLink to='/sermons'>
+                        <button className="p-2 border-none bg-transparent text-white text-[13px] md:text-[15px] font-bold flex items-center gap-2 animate-bounce outline-none mt-[20px] hover:text-[#c5c3c3]">
+                            See Older Messages
+                            <span><FaArrowRightLong /></span>
+                        </button>
+                    </NavLink>
 
                 </div>
             </div>

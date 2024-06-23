@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export interface iAudio {
     _id : string;
@@ -12,7 +13,9 @@ export interface iMember {
     name: string;
     phoneNumber: string;
     email: string;
-    why: string;
+    when: string;
+    how : string;
+    will: string;
 }
 
 export interface iContact {
@@ -20,4 +23,10 @@ export interface iContact {
     name: string;
     email: string;
     message: string;
+}
+
+export interface iGallery {
+    _id: string;
+    gacImage : string;
+    createdAt : any;
 }

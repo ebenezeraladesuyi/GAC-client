@@ -6,7 +6,7 @@ const About = () => {
 
         <div className="w-full h-[50vh] lg:h-[60vh] bg-about-bg bg-cover bg-center text-white flex flex-col justify-center items-center relative">
         
-            <div className="absolute lg:hidden h-full w-full bg-black top-0 left-0 opacity-40"></div>
+            <div className="absolute lg:hidde h-full w-full bg-black top-0 left-0 opacity-50"></div>
 
             <h6 className="z-20 text-[30px] md:text-[50px] font-bold">About Us</h6>
 

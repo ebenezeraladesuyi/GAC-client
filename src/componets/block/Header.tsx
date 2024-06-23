@@ -54,15 +54,15 @@ const Header = () => {
                     </NavLink>
 
                     {/* <Link offset={-100} smooth={true} duration={500} to="services"> */}
-                    <NavLink to='/'>
-                        <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Departments</ol>
+                    <NavLink to='/sermons'>
+                        <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Messages</ol>
                     </NavLink>
 
-                    <NavLink to='/'>
+                    <NavLink to='/gallery'>
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Gallery</ol>
                     </NavLink>
 
-                    <NavLink to='/'>
+                    <NavLink to='/payonline'>
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Give Online</ol>
                     </NavLink>
 
@@ -116,15 +116,15 @@ const Header = () => {
                         </NavLink>
 
                         {/* <Link  offset={-100} smooth={true} duration={500} to="services"> */}
-                        <NavLink to='/'>
-                            <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Departments</ol>
+                        <NavLink to='/sermons'>
+                            <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Messages</ol>
                         </NavLink>
 
-                        <NavLink to='/'>
+                        <NavLink to='/gallery'>
                             <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Gallery</ol>
                         </NavLink>
 
-                        <NavLink to='/'>
+                        <NavLink to='/payonline'>
                             <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Give Online</ol>
                         </NavLink>
 

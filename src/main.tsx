@@ -7,6 +7,8 @@ import { RouterProvider } from 'react-router-dom'
 import { element } from './router/Router.tsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

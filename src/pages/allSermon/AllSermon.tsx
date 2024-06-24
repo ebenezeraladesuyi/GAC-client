@@ -1,7 +1,7 @@
 // import React from 'react'
 
 import { IoCloudDownloadOutline } from "react-icons/io5"
-import { FaPlay } from "react-icons/fa";
+// import { FaPlay, FaPause } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosPerson } from "react-icons/io";
 import { useEffect, useState } from "react";
@@ -19,6 +19,9 @@ const AllSermon = () => {
 
     const [audio, setAudio] = useState<iAudio[]>([]);
     const [loading, setLoading] = useState(false);
+    // const [currentAudio, setCurrentAudio] = useState<iAudio | null>(null);
+    // const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
+    // const [isPlaying, setIsPlaying] = useState(false);
 
     // get all audios
     useEffect(() => {
@@ -30,10 +33,38 @@ const AllSermon = () => {
             } catch (error) {
                 console.error("Error getting audios:", error);
             }
+            
+        setLoading(false)
         }
         fetchAudios();
-        setLoading(false)
     }, []);
+
+    
+    // function to set current audio and load audio element
+    // const selectAudio = (aud: iAudio) => {
+    //     setCurrentAudio(aud);
+
+    //     if (audioElement) {
+    //         audioElement.pause();
+    //         setIsPlaying(false);
+    //     }
+
+    //     const newAudioElement = new Audio(`${url}/audio/getoneaudio/${aud._id}`);
+    //     setAudioElement(newAudioElement)
+    // }
+
+    // function for audio playback
+    // const handlePlayPause = () => {
+    //     if (!audioElement || !currentAudio) return;
+
+    //     if(isPlaying) {
+    //         audioElement.pause();
+    //         setIsPlaying(false);
+    //     } else {
+    //         audioElement.play();
+    //         setIsPlaying(true);
+    //     }
+    // }
 
     // download one audio
     const downloadAudio = async (audioId: string, title: string, author: string) => {
@@ -65,6 +96,8 @@ const AllSermon = () => {
     };
 
 
+
+
   return (
     <div className="w-full py-[30px] bg-white flex flex-col items-center">
         <div className="w-full h-[60vh] bg-black text-white bg-hero-bg bg-center bg-cover relative flex items-end justify-center pb-[30px]">
@@ -74,7 +107,7 @@ const AllSermon = () => {
             <div key={aud?._id} className="z-20 w-[90%] flex flex-col items-center gap-4 justify-end md:items-start">
                 <h6 className="font-bold text-[22px] flex items-center gap-2 md:text-[30px] lg:text-[40px]">
                     <PiFileAudio />
-                    { loading ? (<div><DatasIsaLoading /></div>) :
+                    { loading ? (<div className="w-full flex justify-center items-center"><DatasIsaLoading /></div>) :
                     <span>{aud?.title}</span>
                     }
                 </h6>
@@ -94,9 +127,9 @@ const AllSermon = () => {
                             <span><IoCloudDownloadOutline /></span>Download
                         </button>
 
-                        <div className="bg-whit text-[#00a4f2 text-white rounded-full text-center flex items-center justify-center text-[40px] md:text-[55px] lg:text-[70px] h-[40px w-[40px animate-pulse transition-all duration-300 ease-in-out hover:text-[#00a4f2] cursor-pointer">
-                             <FaPlay />
-                        </div>
+                        {/* <div className="bg-whit text-[#00a4f2 text-white rounded-full text-center flex items-center justify-center text-[40px] md:text-[55px] lg:text-[70px] h-[40px w-[40px animate-pulse transition-all duration-300 ease-in-out hover:text-[#00a4f2] cursor-pointer" onClick={handlePlayPause}>
+                             { currentAudio && currentAudio?._id === aud._id && isPlaying ? <FaPause /> : <FaPlay />}
+                        </div> */}
                     </div>
                 </div>
             </div>

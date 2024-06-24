@@ -97,17 +97,17 @@ const Member = () => {
                     />
                   </div>
                   
-                  <textarea className="w-full p-2 py-4 h-[100px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="When did you start attending Grace Access Church?" 
+                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="When did you start attending Grace Access Church?" 
                     // onChange={(e) => setWhy(e.target.value)}
                   name="when" value={formData.when} onChange={handleChange} required
                   />
 
-                  <textarea className="w-full p-2 py-4 h-[100px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="How did you get to know about Grace Access Church?" 
+                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="How did you get to know about Grace Access Church?" 
                     // onChange={(e) => setWhy(e.target.value)}
                   name="how" value={formData.how} onChange={handleChange} required
                   />
 
-                  <textarea className="w-full p-2 py-4 h-[100px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="Will you like to be a part of the workforce? if yes, please state unit of interest?" 
+                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="Will you like to be a part of the workforce? if yes, please state unit of interest?" 
                     // onChange={(e) => setWhy(e.target.value)}
                   name="will" value={formData.will} onChange={handleChange} required
                   />

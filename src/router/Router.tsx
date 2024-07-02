@@ -7,6 +7,9 @@ import AboutLayout from "../layout/AboutLayout";
 import ContactLayout from "../layout/ContactLayout";
 import GalleryLayout from "../layout/GalleryLayout";
 import AllSermonLayout from "../layout/AllSermonLayout";
+import PaymentLayout from "../layout/PaymentLayout";
+// import PaymentForm from "../pages/payment/PaymentForm";
+import StripePayment from "../pages/payment/StripePayment";
 
 
 const HomeComp = lazy(() => import("../pages/homepage/HomeComp"));
@@ -15,6 +18,7 @@ const AboutComp = lazy(() => import("../pages/about/AboutComp"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 const Gallery = lazy(() => import("../pages/gallery/Gallery"));
 const AllSermon = lazy(() => import("../pages/allSermon/AllSermon"));
+// const StripeApp = lazy(() => import("../pages/payment/StripeApp"));
 
 
 export const element = createBrowserRouter([
@@ -75,6 +79,16 @@ export const element = createBrowserRouter([
             {
                 index: true,
                 element: <AllSermon />
+            }
+        ]
+    },
+    {
+        path:"/payonline",
+        element: <PaymentLayout />,
+        children: [
+            {
+                index: true,
+                element: <StripePayment />
             }
         ]
     },

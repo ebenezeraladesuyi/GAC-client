@@ -5,6 +5,7 @@ import { FaFacebookSquare, FaTelegram } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import mixlr from "../../assets/images/logo/mixlr.png";
 import { NavLink } from "react-router-dom";
+import Typewriter from 'typewriter-effect';
 
 
 const Hero = () => {
@@ -62,7 +63,30 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1.7 }}
             >
-                ...helped by GOD
+                {/* ...helped by GOD */}
+                <Typewriter
+                            options={{ loop: true }}
+                            onInit={(typewriter) => {
+                            typewriter
+
+                                // .typeString("...helped")
+                                // .pauseFor(1500)
+                                // .deleteAll()
+
+                                // .typeString("by")
+                                // .pauseFor(1500)
+                                // .deleteAll()
+
+                                // .typeString("GOD")
+                                // .pauseFor(1500)
+                                // .deleteAll()
+
+                                .typeString("...helped by GOD")
+                                .pauseFor(1500)
+                                .deleteAll()
+                                .start();
+                            }}
+                />
             </motion.h6>
 
             <NavLink to="/aboutus">

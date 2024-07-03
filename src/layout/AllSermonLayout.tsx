@@ -5,7 +5,7 @@ import { Footer, Header } from "../componets"
 
 const AllSermonLayout = () => {
   return (
-    <div>
+    <div className="font-pop">
         <Header />
         <Outlet />
         <Footer />

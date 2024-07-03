@@ -7,17 +7,12 @@ import { RouterProvider } from 'react-router-dom'
 import { element } from './router/Router.tsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import StripeApp from './pages/payment/StripeApp.tsx'
-// import dotenv from 'dotenv';
-// dotenv.config();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Suspense fallback={<IsLoading />}>
         <RouterProvider router={element}/>
-          {/* <StripeApp /> */}
           <ToastContainer />
-        {/* </RouterProvider> */}
     </Suspense>
   </React.StrictMode>,
 )

@@ -24,6 +24,7 @@ export default {
         'about-bg' : "url('/src/assets/images/about/ADE_8239.jpg')",
         'about-bg2' : "url('/src/assets/images/about/ADE_8238.jpg')",
         'about-bg3' : "url('/src/assets/images/about/ADE_8171.jpg')",
+        'pay-bg' : "url('/src/assets/images/pay/time-bg.png')",
       }
     },
   },

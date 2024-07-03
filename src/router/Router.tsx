@@ -8,8 +8,6 @@ import ContactLayout from "../layout/ContactLayout";
 import GalleryLayout from "../layout/GalleryLayout";
 import AllSermonLayout from "../layout/AllSermonLayout";
 import PaymentLayout from "../layout/PaymentLayout";
-// import PaymentForm from "../pages/payment/PaymentForm";
-import StripePayment from "../pages/payment/StripePayment";
 
 
 const HomeComp = lazy(() => import("../pages/homepage/HomeComp"));
@@ -18,7 +16,7 @@ const AboutComp = lazy(() => import("../pages/about/AboutComp"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 const Gallery = lazy(() => import("../pages/gallery/Gallery"));
 const AllSermon = lazy(() => import("../pages/allSermon/AllSermon"));
-// const StripeApp = lazy(() => import("../pages/payment/StripeApp"));
+const PaymentComp = lazy(() => import("../pages/payment/PaymentComp"));
 
 
 export const element = createBrowserRouter([
@@ -88,7 +86,7 @@ export const element = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <StripePayment />
+                element: <PaymentComp />
             }
         ]
     },

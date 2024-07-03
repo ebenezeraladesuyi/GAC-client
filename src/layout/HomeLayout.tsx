@@ -5,7 +5,7 @@ import { Footer, Header } from "../componets"
 
 const HomeLayout = () => {
   return (
-    <div>
+    <div className="font-pop">
         <Header />
         <Outlet />
         <Footer />

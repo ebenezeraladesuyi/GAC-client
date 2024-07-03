@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from 'react';
 import {PaystackButton} from 'react-paystack';
+import paystack from "../../assets/images/pay/paystack.png";
 
 const PaymentForm: React.FC = () => {
   const [amount, setAmount] = useState<number>(0); // State to hold amount
@@ -31,8 +32,11 @@ const PaymentForm: React.FC = () => {
 
   return (
     <div className="w-full flex justify-center items-center">
-        <div className='w-[90%] md:w-[60%] lg:w-[50%] h-[210px] rounded-md bg-white shadow-md p-4  flex flex-col items-center  gap-3'>
-            <h2 className='bg-[#23a1db] text-white text-center p-1 px-2 rounded-md text-[13px]'>Pay With PayStack</h2>
+        <div className='w-[90%] md:w-[60%] lg:w-[50%] pb-6 rounded-md bg-white shadow-md p-4  flex flex-col items-center  gap-3'>
+            <div className='w-[130px]'>
+                <img src={paystack} alt="" />
+            </div>
+            
             <label htmlFor="amountInput" className=''>Enter Amount (NGN)</label>
             <input
                 type="number"

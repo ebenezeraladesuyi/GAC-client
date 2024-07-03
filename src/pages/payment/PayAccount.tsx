@@ -20,7 +20,9 @@ const PayAccount = () => {
                 </div>
             </div>
 
-            <h4 className="text-[13px] md:text-[16px] mt-[40px] font-bold text-center text-white bg-black p-1 mb-[0px]">OR MAKE AN ONLINE TRANSACTION (card, ussd etc.)</h4>
+            <h4 className="text-[13px] md:text-[16px] mt-[40px] font-bold text-center text-white bg-black p-1 mb-[0px]">OR MAKE AN ONLINE TRANSACTION (card, ussd etc.)
+                <br /><span className="text-[#23a1db] text-[11px]">coming soon!</span>
+            </h4>
         </div>
     </div>
   )

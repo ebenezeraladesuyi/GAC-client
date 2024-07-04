@@ -7,6 +7,8 @@ import { DatasIsaLoading } from '../isLoading/DataIsLoading';
 import { iContact } from '../../types/interface';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaFacebookF, FaInstagram, FaTelegram } from "react-icons/fa";
+import mixlr from "../../assets/images/logo/mixlr.png";
 
 
 const Contact = () => {
@@ -69,6 +71,26 @@ const Contact = () => {
           <img className="w-full" src={conImg} alt="" />
         </div>
 
+        <div className='md:hidden w-full p-6 rounded-md bg-[#2a2828] text-white'>
+          <h2 className='font-bold text-center mb-[25px]'>OUR SOCIALS</h2>
+          
+          <div className='flex flex-col gap-2 items-center'>
+            <div className='flex gap-3'>
+              <div className='w-[30px] h-[30px] bg-[#00AFEF]  rounded-full flex justify-center items-center'><FaFacebookF /></div>
+              
+              <div className='w-[30px] h-[30px] bg-[#00AFEF]  rounded-full flex justify-center items-center'><FaInstagram /></div>
+
+              <div className='w-[30px] h-[30px] bg-[#00AFEF]  rounded-full flex justify-center items-center'><FaTelegram /></div>
+
+              <div className='w-[30px] h-[30px] bg-[#00AFEF]  rounded-full flex justify-center items-center'>
+                <img className='w-[60%]' src={mixlr} alt="" />
+              </div>
+            </div>
+            
+            <span className='font-bold'>@graceaccesschurch</span>
+          </div>
+        </div>
+
         <form onSubmit={handleSubmit2} className="w-full md:w-[38%] flex flex-col gap-4">
 
           <h5 className="text-[18px] font-bold md:text-[22px] lg:text-[27px] text-[#00AFEF] animate-bounce text-center md:text-left">CONTACT US</h5>
@@ -76,6 +98,7 @@ const Contact = () => {
           <select className="w-full h-[43px] px-3 rounded-md outline-none text-[12px] lg:text-[15px] border-[1px] border-[#00AFEF]"
           name="reason" value={formData.reason} onChange={handleChange}
           >
+            <option value="">-- Select --</option>
             <option value="Testimony">Testimony</option>
             <option value="Prayer Request">Prayer Request</option>
           </select>

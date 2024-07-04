@@ -58,7 +58,7 @@ const Prayer = () => {
                         <NavLink to="/becomeamember">
                             <div className="mb-[20px]">
                                 <PrayerCard 
-                                    content="Join Grace Access Membership Class (GAMA)"
+                                    content="Want To Be A Member"
                                     buttonContent="Start Here"
                                 />
                             </div>

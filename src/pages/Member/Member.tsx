@@ -68,7 +68,7 @@ const Member = () => {
   return (
     <div className="w-full min-h-[100vh] md:h-screen flex justify-center items-center border-b-[1px  bg-member-bg bg-center bg-cover lg:bg-none relative font-pop py-[30px]">
         
-        <div className="absolute lg:hidden h-full w-full bg-black top-0 left-0 opacity-30"></div>
+        <div className="absolute lg:hidden h-full w-full bg-black top-0 left-0 opacity-50"></div>
 
         <div className="hidden h-screen lg:block  bg-member-bg bg-center bg-cover w-[40%] bg-gray-300 relative fixe">
             <div className="absolute h-full w-full bg-black top-0 left-0 opacity-30"></div>

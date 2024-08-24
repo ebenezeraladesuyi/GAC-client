@@ -16,7 +16,7 @@ const PayAccount = () => {
                 <div className="text-[20px] lg:text-[23px] flex flex-col items-center md:items-start">
                     <h6 className="font-bold">FIRST BANK</h6>
                     <h6 className="font-bold text-[24px] md:text-30px]">2038405981</h6>
-                    <h6 className="text-center md:text-left">GRACE ACCESS CHURCH</h6>
+                    <h6 className="text-center md:text-left">GRACE ACCESS CONNECT</h6>
                 </div>
             </div>
 

@@ -20,7 +20,7 @@ const Footer = () => {
           </h6> */}
 
           <h5 className="text-[11px] lg:text-[14px] text-cente mb-[0px] flex flex-col text-[#50519f]">
-            <span className="text-[#80c41c]">Address:</span>Vita Foam Building, between Mojere Market & Matrix Filling Station, Adebayo, Ado-Ekiti, Ekiti State.  <span className="text-[#80c41c]">Phone:</span> +234 (0) 903 812 1579 || +234 (0) 703 799 7127 <span className="text-[#80c41c]">Email:</span> graceaccesschurch@gmail.com
+            <span className="text-[#80c41c]">Address:</span>Vitafoam Building, between Mojere Market & Matrix Filling Station, Adebayo, Ado-Ekiti, Ekiti State.  <span className="text-[#80c41c]">Phone:</span> +234 (0) 903 812 1579 || +234 (0) 703 799 7127 <span className="text-[#80c41c]">Email:</span> graceaccesschurch@gmail.com
           </h5>
 
           <div className="flex flex-col gap-3 text-[11px] md:text-[14px] text-[#50519f]">

@@ -16,7 +16,7 @@ const Hero = () => {
     transition={{ duration: 0.8, delay: 0.2 }}
     >
 
-        <div className="absolute bg-black w-full h-full opacity-35 "></div>
+        <div className="absolute md:bg-black bg-gradient-to-t from-[#000000] from-9% via-[#151515c3] via-20% to-[#15151588] to-65% w-full h-full md:opacity-35 "></div>
 
         <div className="w-[90%] z-30 flex flex-col items-center md:items-start gap-5 mt-[100px] ">
 

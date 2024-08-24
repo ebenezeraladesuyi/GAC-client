@@ -12,7 +12,7 @@ const Beleieve = () => {
                   Ready to Begin A New Experience with Christ?
               </h6>
 
-              <NavLink to="/becomeamember"><a href="" className="p-2 px-5 bg-[#23a1db] text-white rounded-[20px] animate-pulse">Become A Believer</a></NavLink>
+              <NavLink to="/becomeamember"><a href="" className="p-2 px-5 bg-[#23a1db] text-white rounded-[20px] animate-pulse">Call To Salvation</a></NavLink>
           </div>
       </div>
     </RevealMap>

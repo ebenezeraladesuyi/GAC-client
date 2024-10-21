@@ -24,7 +24,7 @@ const Beleieve = () => {
                 </p>
 
                 <p className="text-[12px] lg:text-[14px] bg-[#000] p-1 py-3 rounded-[6px] text-white">
-                  If you had said this Prayer, you welcome you to the family of our Lord Jesus. Please click the "Call To Salvation" button. We would love to have you name, email, phone number.
+                  If you had said this Prayer, we welcome you to the family of our Lord Jesus. Please click the "Call To Salvation" button. We would love to have you name, email, phone number.
                 </p>
               </div>
 

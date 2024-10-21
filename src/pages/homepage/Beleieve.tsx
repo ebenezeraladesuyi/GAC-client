@@ -16,7 +16,7 @@ const Beleieve = () => {
                 <h2 className="text-[15px] lg:text-[17px]">Please, Say This Out Loud!</h2>
 
                 <p className="text-[13px] lg:text-[15px]">
-                  Lord Jesus, I come to you today confessing that I am a sinner. I believe that you died for my sin and you were raised fro my justification; beacuse of what you did, my sins were paid for.
+                  Lord Jesus, I come to you today confessing that I am a sinner. I believe that you died for my sin and you were raised for my justification; beacuse of what you did, my sins were paid for.
                 </p>
 
                 <p className="text-[13px] lg:text-[15px]">
@@ -24,7 +24,7 @@ const Beleieve = () => {
                 </p>
 
                 <p className="text-[12px] lg:text-[14px] bg-[#000] p-1 py-3 rounded-[6px] text-white">
-                  If you had said this Prayer, we welcome you to the family of our Lord Jesus. Please click the "Call To Salvation" button. We would love to have you name, email, phone number.
+                  If you had said this Prayer, we welcome you to the family of our Lord Jesus. Please click the "Call To Salvation" button. We would love to have your name, email, phone number.
                 </p>
               </div>
 

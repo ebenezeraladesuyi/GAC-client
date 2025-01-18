@@ -30,3 +30,10 @@ export interface iGallery {
     gacImage : string;
     createdAt : any;
 }
+
+export interface iSalvation {
+    name: string;
+    email: string;
+    phoneNumber: string;
+    prayer: string;
+}

@@ -58,10 +58,6 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
   
-  // const handleChangeSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  // };
 
   return (
     <div id="" className="w-full md:h-[100vh] flex flex-col justify-center items-center font-mont py-[30px] bg-white relative overflow-hidden">

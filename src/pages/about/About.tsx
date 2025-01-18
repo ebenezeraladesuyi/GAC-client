@@ -10,7 +10,7 @@ const About = () => {
 
             <h6 className="z-20 text-[30px] md:text-[50px] font-bold">About Us</h6>
 
-            <h6 className="z-20 text-center mb-[-15px] md:text-[22px] md:w-[60%] lg:w-[50%] ">THE WORD | RIGHTEOUSNESS | EXCELLENCE | HONOUR | LEADERSHIP</h6>
+            <h6 className="z-20 text-center mb-[-15px] md:text-[22px] md:w-[60%] lg:w-[50%] ">WORD | PRAYER | RIGHTEOUSNESS | EXCELLENCE | HONOUR | LEADERSHIP</h6>
         </div>
 
         <div className="w-[90%] flex flex-col md:flex-row justify-center md:justify-between items-cente mt-[30px] gap-5">
@@ -26,7 +26,7 @@ const About = () => {
             </div>
 
             <div className="w-full md:w-[45%] flex flex-col gap-4">
-                <div className="w-full h-[250px] bg-about-bg2 bg-center bg-cover rounded-bl-[120px] md:rounded-bl-[150px] rounded-tr-[120px] md:rounded-tr-[150px]"></div>
+                <div className="w-full h-[250px] bg-about-man bg-center bg-cover rounded-bl-[120px] md:rounded-bl-[150px] rounded-tr-[120px] md:rounded-tr-[150px]"></div>
 
                 <div className="w-full  shadow-md border-[1px] rounded-[10px] mt-[10px] h-[140px] border-[#23a1db flex justify-center items-center relative">
 

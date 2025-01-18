@@ -16,6 +16,9 @@ export default {
         'prayer2' : "url('/src/assets/images/prayer/prayer2.jpg')",
         'prayer3' : "url('/src/assets/images/prayer/prayer3.jpg')",
         'prayer4' : "url('/src/assets/images/prayer/prayer4.jpg')",
+        'prayer5' : "url('/src/assets/images/prayer/member.jpg')",
+        'prayer6' : "url('/src/assets/images/prayer/prayer-request.jpg')",
+        'prayer7' : "url('/src/assets/images/prayer/testimony.jpg')",
         'raa' : "url('/src/assets/images/sermons/RAA-4.png')",
         'lady' : "url('/src/assets/images/sermons/lady2.jpg')",
         'be' : "url('/src/assets/images/Believe/testiBg.png')",
@@ -24,6 +27,7 @@ export default {
         'about-bg' : "url('/src/assets/images/about/ADE_8239.jpg')",
         'about-bg2' : "url('/src/assets/images/about/ADE_8238.jpg')",
         'about-bg3' : "url('/src/assets/images/about/ADE_8171.jpg')",
+        'about-man' : "url('/src/assets/images/about/mandate.jpg')",
         'pay-bg' : "url('/src/assets/images/pay/time-bg.png')",
       }
     },

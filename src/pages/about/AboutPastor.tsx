@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import raa from "../../assets/images/sermons/RAA-3.png";
+import raa from "../../assets/images/about/IMG_6867.png";
 
 const AboutPastor = () => {
   return (

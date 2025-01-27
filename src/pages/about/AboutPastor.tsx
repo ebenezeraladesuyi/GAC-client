@@ -6,15 +6,15 @@ const AboutPastor = () => {
   return (
     <div className="w-full h-[100%] flex justify-center items-center bg-[#23a1db] py-[20px] mt-[20px]">
         <div className="w-[90%] text-white">
-            <h6 className="text-[20px] font-bold text-center md:text-left mb-[20px]">Meet Our Lead Pastor</h6>
+            <h6 className="text-[20px] font-bold text-center md:text-left mb-[20px]">Meet Our Lead Pastors</h6>
 
             <div className="w-full">
-                <div className="w-full flex flex-col md:flex-row mb-[20px] gap-6">
+                <div classNa-me="w-full flex flex-col md:flex-row mb-[20px] gap-6">
                     <div className="w-full md:w-[30%] bg-white rounded-md ">
                         <img src={raa} className="w-full" alt="" />
                     </div>
 
-                    <h6 className="text-[12px] text-justify md:text-[16px] md:w-[65%]"><span className="text-[17px] md:text-[22px] font-bold">Rev'd Ayo Awe</span>
+                    <h6 className="text-[12px] text-justify md:text-[16px] md:w-[65%]"><span className="text-[17px] md:text-[22px] font-bold">Rev'd Ayo and Tolu Awe</span>
                         <p className="mt-[10px] mb-[15px]">
                             Rev’d Ayo Awe is the Lead Pastor and Founder of Grace Access Church, with the mandate of bringing men into deep intimacy with the Father, living the totally good life God has ordained for His children. Married to Tolu Ayo-Awe, he is passionate about building a total man in Christ.
                         </p>

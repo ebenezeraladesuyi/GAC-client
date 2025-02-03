@@ -70,6 +70,10 @@ const Header = () => {
                     <NavLink to='/contact'>
                         <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Contact Us</ol>
                     </NavLink>
+                    
+                    <a href="https://www.taami.com.ng">
+                        <ol className='text-[#063e60] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>TAAMI</ol>
+                    </a>
 
                     <NavLink to="/becomeamember">
                         <button className=' px-4 py-3 bg-[#23a1db] border-none hover:bg-[#063e60] text-white font-semibold animate-puls ml-[50px] rounded-[60px] transition-all duration-300 ease-in-out hover:px- hover:py-'>
@@ -132,6 +136,10 @@ const Header = () => {
                         <NavLink to='/contact'>
                             <ol className='text-white  hover:text-[#eedfb0s] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>Contact Us</ol>
                         </NavLink>
+
+                        <a href="https://www.taami.com.ng">
+                            <ol className='text-white  hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out'>TAAMI</ol>
+                        </a>
 
                         <NavLink to="/becomeamember">
                             <button className='w-[150px bg-[#80c41c] border-none hover:bg-[#3d82b3] text-white font-semibold animate-pulse  rounded-[60px]'>

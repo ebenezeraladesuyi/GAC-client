@@ -13,6 +13,7 @@ import { LuDownloadCloud } from "react-icons/lu";
 import { DatasIsaLoading } from "../isLoading/DataIsLoading";
 // import { AiFillAudio } from "react-icons/ai";
 import { PiFileAudio } from "react-icons/pi";
+import { toast } from "react-toastify";
 
 
 const AllSermon = () => {
@@ -39,37 +40,12 @@ const AllSermon = () => {
         fetchAudios();
     }, []);
 
-    
-    // function to set current audio and load audio element
-    // const selectAudio = (aud: iAudio) => {
-    //     setCurrentAudio(aud);
-
-    //     if (audioElement) {
-    //         audioElement.pause();
-    //         setIsPlaying(false);
-    //     }
-
-    //     const newAudioElement = new Audio(`${url}/audio/getoneaudio/${aud._id}`);
-    //     setAudioElement(newAudioElement)
-    // }
-
-    // function for audio playback
-    // const handlePlayPause = () => {
-    //     if (!audioElement || !currentAudio) return;
-
-    //     if(isPlaying) {
-    //         audioElement.pause();
-    //         setIsPlaying(false);
-    //     } else {
-    //         audioElement.play();
-    //         setIsPlaying(true);
-    //     }
-    // }
 
     // download one audio
     const downloadAudio = async (audioId: string, title: string, author: string) => {
         try {
-            
+            toast.success("Downloading...")
+
             const response = await axios.get(`${url}/audio/getoneaudio/${audioId}`, {
                 responseType: 'blob',
             });
@@ -90,8 +66,11 @@ const AllSermon = () => {
             link.href = urll;
             link.download = filename;
             link.click();
+
+            toast.success("Download successful")
         } catch (error) {
             console.error('Error downloading audio:', error);
+            toast.error("Error while MdDownloading. Please, try again")
         }
     };
 

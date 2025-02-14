@@ -11,6 +11,7 @@ import { url } from "../../utils/Api";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { DatasIsaLoading } from "../isLoading/DataIsLoading";
+import { toast } from "react-toastify";
 
 
 
@@ -27,6 +28,8 @@ const Sermons = () => {
                 const response = await axios.get(`${url}/audio/allaudios`);
                 setAudio(response.data.data);
 
+                console.log(response.data)
+
                 setLoading(false)
             } catch (error) {
                 console.error("Error getting audios:", error);
@@ -40,7 +43,8 @@ const Sermons = () => {
     // download one audio
     const downloadAudio = async (audioId: string, title: string, author: string) => {
         try {
-            
+            toast.success("Downloading...")
+
             const response = await axios.get(`${url}/audio/getoneaudio/${audioId}`, {
                 responseType: 'blob',
             });
@@ -62,8 +66,11 @@ const Sermons = () => {
             link.download = filename;
             link.click();
 
+            toast.success("Downloaded successfully")
+
         } catch (error) {
             console.error('Error downloading audio:', error);
+            toast.error("Error while downloading. Please, try again")
 
         }
     };

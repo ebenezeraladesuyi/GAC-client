@@ -8,6 +8,9 @@ import ContactLayout from "../layout/ContactLayout";
 import GalleryLayout from "../layout/GalleryLayout";
 import AllSermonLayout from "../layout/AllSermonLayout";
 import PaymentLayout from "../layout/PaymentLayout";
+import ElevationLayout from "../layout/ElevationLayout";
+import ElevationForm from "../pages/elevation/ElevationForm";
+import ElevationSuccess from "../pages/elevation/ElevationSuccess";
 
 
 const HomeComp = lazy(() => import("../pages/homepage/HomeComp"));
@@ -90,4 +93,18 @@ export const element = createBrowserRouter([
             }
         ]
     },
+    {
+        path: "/elevation",
+        element: <ElevationLayout />,
+        children: [
+            {
+                index: true,
+                element: <ElevationForm />
+            },
+            {
+                path: "success",
+                element: <ElevationSuccess />
+            }
+        ]
+    }
 ])

@@ -72,7 +72,7 @@ const ElevationSuccess = () => {
                   <FiMapPin className="text-[#51a0ed] mr-3 text-xl" />
                   <h3 className="font-bold text-[#1c3f65]">Venue</h3>
                 </div>
-                <p className="text-[#1c3f65]/80 pl-8">SSANU Cooperative Hall, Beside UBa, Ekiti State University</p>
+                <p className="text-[#1c3f65]/80 pl-8">SSANU Cooperative Hall, Beside UBA, Ekiti State University</p>
               </div>
             </div>
 

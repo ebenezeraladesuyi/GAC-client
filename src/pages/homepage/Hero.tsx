@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { FaFacebookSquare, FaTelegram } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
-import mixlr from "../../assets/images/logo/mixlr.png";
+import { FiYoutube } from "react-icons/fi";
+// import mixlr from "../../assets/images/logo/mixlr.png";
 import { NavLink } from "react-router-dom";
 import Typewriter from 'typewriter-effect';
 
@@ -90,7 +91,7 @@ const Hero = () => {
             </motion.h6>
 
             <NavLink to="/aboutus">
-                <motion.button className="w-[150px] md:w-[200px] py-3 bg-[#23a1db] text-white rounded-lg text-[15px] md:text-[18px] animate-pulse"
+                <motion.button className="w-[150px] md:w-[200px] py-3 bg-[#23a1db] text-white rounded-lg text-[15px] md:text-[18px] animate-puls"
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1.9 }}
@@ -121,12 +122,13 @@ const Hero = () => {
             >
                     <FaTelegram />
                 </motion.a>
-                <motion.a href="https://graceaccesschurch.mixlr.com" className="text-white w-[19px] md:w-[27px]"
+                <motion.a href="https://youtube.com/@graceaccesschurch?si=iZoTlTdGib-JW_9g" className="text-white text-[20px] md:text-[30px]"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 3.1 }}
             >
-                    <img src={mixlr} />
+                    {/* <img src={mixlr} /> */}
+                    <FiYoutube />
                 </motion.a>
             </div>
 

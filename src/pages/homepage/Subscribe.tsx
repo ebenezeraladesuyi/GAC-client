@@ -88,12 +88,12 @@ const Subscribe = () => {
                     <form 
                     // onSubmit={submit} 
                     className=" flex flex-col items-center justify-cente gap-3" action="">
-                        <input type="text" placeholder="FullName" className="w-[280px] md:w-[350px] lg:w-[500px] h-[38px] text-[13px] border-[#00a4f2 rounded-md border-[1px] px-3 outline-none"
+                        <input type="text" placeholder="FullName" className="w-[280px] md:w-[350px] lg:w-[500px] h-[38px] text-[13px] border-[#063e60] rounded-md border-[1px] px-3 outline-none bg-[fffffff]"
                         // {...register("fullName")}
                          />
                          {/* <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.fullName && errors?.fullName.message}</p> */}
 
-                        <input type="email" placeholder="Email" className="w-[280px] md:w-[350px] lg:w-[500px] h-[38px] text-[13px] border-[#00a4f2 rounded-md border-[1px] px-3 outline-none" 
+                        <input type="email" placeholder="Email" className="w-[280px] md:w-[350px] lg:w-[500px] h-[38px] text-[13px] border-[#063e60] rounded-md border-[1px] px-3 outline-none bg-[#ffffff]" 
                         // {...register("email")}
                         />
                         {/* <p className="text-[8px] mt-[-10px] mb-[5px]">{errors?.email && errors?.email.message}</p> */}

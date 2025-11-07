@@ -81,33 +81,33 @@ const Member = () => {
 
                 <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
                   <div className='w-full flex flex-col lg:flex-row lg:justify-between items-center gap-4 lg:gap-0'>
-                    <input className="w-full lg:w-[32%] h-[40px] lg:border-[1px] border-[#23a1db rounded-md p-2 text-[12px] outline-none shadow-md" type="text" placeholder="Name" 
+                    <input className="w-full lg:w-[32%] h-[40px] lg:border-[1px] border-[#23a1db rounded-md p-2 text-[12px] outline-none shadow-md bg-[#ffffff] text-[#000000]" type="text" placeholder="Name" 
                         //  onChange={(e) => setName(e.target.value)}
                         name="name" value={formData.name} onChange={handleChange} required
                     />
 
-                    <input className="w-full lg:w-[32%] h-[40px] lg:border-[1px] border-[#23a1db rounded-md p-2 outline-none text-[12px] shadow-md"  type="text" placeholder="Phone Number" 
+                    <input className="w-full lg:w-[32%] h-[40px] lg:border-[1px] border-[#23a1db rounded-md p-2 outline-none text-[12px] shadow-md bg-[#ffffff] text-[#000000]"  type="text" placeholder="Phone Number" 
                     // onChange={(e) => setPhoneNumber(e.target.value)}
                     name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} required
                     />
 
-                    <input className="w-full lg:w-[32%] h-[40px] lg:border-[1px] border-[#23a1db rounded-md outline-none p-2 text-[12px] shadow-md"  type="email" placeholder="E-mail" 
+                    <input className="w-full lg:w-[32%] h-[40px] lg:border-[1px] border-[#23a1db rounded-md outline-none p-2 text-[12px] shadow-md bg-[#ffffff] text-[#000000]"  type="email" placeholder="E-mail" 
                     // onChange={(e) => setEmail(e.target.value)}
                     name="email"  value={formData.email} onChange={handleChange} required 
                     />
                   </div>
                   
-                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="When did you start attending Grace Access Church?" 
+                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md bg-[#ffffff] text-[#000000]" placeholder="When did you start attending Grace Access Church?" 
                     // onChange={(e) => setWhy(e.target.value)}
                   name="when" value={formData.when} onChange={handleChange} required
                   />
 
-                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="How did you get to know about Grace Access Church?" 
+                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md bg-[#ffffff] text-[#000000]" placeholder="How did you get to know about Grace Access Church?" 
                     // onChange={(e) => setWhy(e.target.value)}
                   name="how" value={formData.how} onChange={handleChange} required
                   />
 
-                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md" placeholder="Will you like to be a part of the workforce? if yes, please state unit of interest?" 
+                  <textarea className="w-full p-2 py-4 h-[60px] lg:border-[1px] border-[#23a1db rounded-md outline-none text-[12px] shadow-md bg-[#ffffff] text-[#000000]" placeholder="Will you like to be a part of the workforce? if yes, please state unit of interest?" 
                     // onChange={(e) => setWhy(e.target.value)}
                   name="will" value={formData.will} onChange={handleChange} required
                   />

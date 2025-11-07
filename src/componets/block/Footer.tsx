@@ -3,7 +3,8 @@
 import logo from "../../assets/images/logo/GAC-logo.png";
 import { FaFacebookF, FaInstagram, FaTelegram } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
-import mixlr from "../../assets/images/logo/mixlr.png";
+// import mixlr from "../../assets/images/logo/mixlr.png";
+import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -25,7 +26,8 @@ const Footer = () => {
 
           <div className="flex flex-col gap-3 text-[11px] md:text-[14px] text-[#50519f]">
             <h6 className="cursor-pointr mb-[0px] text-[16px] md:text-[18px] font-bold md:mt-[20px] text-[#80c41c]">Service Schedule</h6>
-            <h6 className="cursor-pointr">Sunday Service <span>8:30am</span></h6>
+            <h6 className="cursor-pointr">Sunday Service <span>8am (First Service)</span></h6>
+            <h6 className="cursor-pointr">Sunday Service <span>10am (Second Service)</span></h6>
             <h6 className="cursor-pointr">Mid-Week Service (Wednesdays) <span>5:00pm</span></h6>
             {/* <h6 className="cursor-pointe">Product Engineering</h6>
             <h6 className="cursor-pointr">Product Strategy</h6>
@@ -41,8 +43,9 @@ const Footer = () => {
             <a href="https://instagram.com/graceaccesschurch" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center  bg-[#23a1db] text-white rounded-full">
               <FaInstagram />
             </a>
-            <a href="https://graceaccesschurch.mixlr.com" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center  bg-[#23a1db] text-white rounded-full">
-              <img src={mixlr} />
+            <a href="https://youtube.com/@graceaccesschurch?si=iZoTlTdGib-JW_9g" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center bg-[#23a1db] text-white rounded-full">
+              {/* <img src={mixlr} /> */}
+              <FiYoutube />
             </a>
             <a href="https://graceaccesschurch@gmail.com" className="w-[30px] h-[30px] border-[1px] p-2 flex items-center justify-center bg-[#23a1db] text-white rounded-full">
               <MdAttachEmail />

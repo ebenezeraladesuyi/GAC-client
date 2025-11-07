@@ -148,7 +148,8 @@ const AllSermon = () => {
                 <h5 className="font-bold text-[20px] text-center text-[#fff]">Do Not Miss Our Next Service!!</h5>
 
                 {/* <h6 className="text-[14px] text-center flex flex-col">Sunday School: <span className="text-[#b6f4d1]">9:30am</span></h6> */}
-                <h6 className="text-[14px] text-center flex flex-col font-bold">Sunday Service: <span className="text-[#b6f4d1]">08:30am</span></h6>
+                <h6 className="text-[14px] text-center flex flex-col font-bold">Sunday Service: <span className="text-[#b6f4d1]">08:00am (First Service)</span></h6>
+                <h6 className="text-[14px] text-center flex flex-col font-bold">Sunday Service: <span className="text-[#b6f4d1]">10:00am (Second Service)</span></h6>
                 <h6 className="text-[14px] text-center font-bold">Wednesday: Midweek Service: <span className="text-[#b6f4d1]">5:00pm</span></h6>
             </div>
         </div>

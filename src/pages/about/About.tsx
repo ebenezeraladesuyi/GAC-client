@@ -21,7 +21,7 @@ const About = () => {
 
                     <h6 className="absolute top-[-15px] bg-[#23a1db] text-white p-1 px-3 rounded-md">OUR MISSION</h6>
 
-                    <h6 className="mt-[10px] font-bold text-center p-2">BUILDING A TOTAL MAN IN CHRIST JESUS</h6>
+                    <h6 className="mt-[10px] font-bold text-center p-2 text-[#23a1db]">BUILDING A TOTAL MAN IN CHRIST JESUS</h6>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@ const About = () => {
 
                     <h6 className="absolute top-[-15px] bg-[#23a1db] text-white p-1 px-3 rounded-md">OUR MANDATE</h6>
 
-                    <h6 className="mt-[10px] text-[13px] font-bold text-center p-2">TO BRING MEN TO THE PLACE OF DEEP INTIMACY WITH THE FATHER, REGARDLESS OF THEIR LIMITATIONS, LIVING A TOTALLY GOOD LIFE GOD ORDAINED FOR HIS PEOPLE</h6>
+                    <h6 className="mt-[10px] text-[13px] font-bold text-center p-2 text-[#23a1db]">TO BRING MEN TO THE PLACE OF DEEP INTIMACY WITH THE FATHER, REGARDLESS OF THEIR LIMITATIONS, LIVING A TOTALLY GOOD LIFE GOD ORDAINED FOR HIS PEOPLE</h6>
                 </div>
             </div>
 

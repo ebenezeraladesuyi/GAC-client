@@ -8,7 +8,8 @@ import { iContact } from '../../types/interface';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaFacebookF, FaInstagram, FaTelegram } from "react-icons/fa";
-import mixlr from "../../assets/images/logo/mixlr.png";
+// import mixlr from "../../assets/images/logo/mixlr.png";
+import { FiYoutube } from 'react-icons/fi';
 
 
 const Contact = () => {
@@ -79,7 +80,8 @@ const Contact = () => {
               <div className='w-[30px] h-[30px] bg-[#00AFEF]  rounded-full flex justify-center items-center'><FaTelegram /></div>
 
               <div className='w-[30px] h-[30px] bg-[#00AFEF]  rounded-full flex justify-center items-center'>
-                <img className='w-[60%]' src={mixlr} alt="" />
+                {/* <img className='w-[60%]' src={mixlr} alt="" />*/}
+                <FiYoutube />
               </div>
             </div>
             
@@ -91,7 +93,7 @@ const Contact = () => {
 
           <h5 className="text-[18px] font-bold md:text-[22px] lg:text-[27px] text-[#00AFEF] animate-bounce text-center md:text-left">CONTACT US</h5>
 
-          <select className="w-full h-[43px] px-3 rounded-md outline-none text-[12px] lg:text-[15px] border-[1px] border-[#00AFEF]"
+          <select className="w-full h-[43px] px-3 rounded-md outline-none text-[12px] lg:text-[15px] border-[1px] border-[#00AFEF]  bg-[#ffffff] text-[#000000]"
           name="reason" value={formData.reason} onChange={handleChange}
           >
             <option value="">-- Select --</option>
@@ -99,15 +101,15 @@ const Contact = () => {
             <option value="Prayer Request">Prayer Request</option>
           </select>
 
-          <input className="w-full h-[43px] px-3 rounded-md outline-none text-[12px] lg:text-[15px] border-[1px] border-[#00AFEF]" type="text" id="" placeholder="Name"
+          <input className="w-full h-[43px] px-3 rounded-md outline-none text-[12px] lg:text-[15px] border-[1px] border-[#00AFEF] bg-[#ffffff] text-[#000000]" type="text" id="" placeholder="Name"
           name="name" value={formData.name} onChange={handleChange}
           />
 
-          <input className="w-full h-[43px] px-3 rounded-md outline-none text-[12px] lg:text-[15px] border-[1px] border-[#00AFEF]" type="email" id="" placeholder="Email" 
+          <input className="w-full h-[43px] px-3 rounded-md outline-none text-[12px] lg:text-[15px] border-[1px] border-[#00AFEF] bg-[#ffffff] text-[#000000]" type="email" id="" placeholder="Email" 
           name="email" value={formData.email} onChange={handleChange}
           />
 
-          <textarea className="w-full h-[130px] py-3 px-3 text-[12px] md:text-[15px] rounded-md border-[1px] border-[#00AFEF]" id="" placeholder="Enter your message" 
+          <textarea className="w-full h-[130px] py-3 px-3 text-[12px] md:text-[15px] rounded-md border-[1px] border-[#00AFEF] bg-[#ffffff] text-[#000000]" id="" placeholder="Enter your message" 
           name="message" value={formData.message} onChange={handleChange}
           />
 

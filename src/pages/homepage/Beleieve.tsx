@@ -64,7 +64,7 @@ const Beleieve = () => {
 
   return (
     <RevealMap>
-      <div className="w-full min-h-[50vh] flex justify-center items-center bg-be bg-center bg-cover relative font-pop py-[30px]">
+      <div className="w-full min-h-[50vh] flex justify-center items-center bg-be bg-center bg-cover relative font-pop py-[30px] text-[#063e60]">
           <div className="w-[90%] flex flex-col md:flex-row justify-between items-center md:items-start gap-5">
               <div className="flex flex-col gap-3 text-center md:text-left w-full md:w-[60%]">
                 <h1 className="text-center md:text-left text-[20px] md:text-[30px] lg:text-[35px] leading-[25px] md:leading-[40px] font-bold  lg:w-[90%]">
@@ -82,29 +82,29 @@ const Beleieve = () => {
                 </p>
 
                 <p className="text-[12px] lg:text-[14px] bg-[#000] p-1 py-3 rounded-[6px] text-white">
-                  If you had said this Prayer, we welcome you to the family of our Lord Jesus. Please click the "Call To Salvation" button. We would love to have your name, email, phone number.
+                  If you have said this Prayer, we welcome you to the family of our Lord Jesus. Please click the "Call To Salvation" button. We would love to have your name, email, phone number.
                 </p>
               </div>
 
               <div className="flex flex-col gap-3 items-center">
                 {/* <NavLink to="/becomeamember" > */}
-                  <button onClick={showForm} className="p-2 px-3 md:px-5 md:py-2 lg:px-6 lg:py-4 bg-[#23a1db] text-white rounded-[20px] animate-pulse transition-all duration-700 ease-in-out outline-none border-none">Call To Salvation</button>
+                  <button onClick={showForm} className="p-2 px-3 md:px-5 md:py-2 lg:px-6 lg:py-4 bg-[#00AFEF] text-white rounded-[20px] animate-puls transition-all duration-700 ease-in-out outline-none border-none">Call To Salvation</button>
                 {/* </NavLink> */}
 
                 {show ?
                   <div className={`flex w-full flex-col gap-2 mt-[20px] transition-all duration-500 ease-in-out ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"}`}>
-                    <p className="text-center md:text-left">
+                    <p className="text-center md:text-left text-[#063e60]">
                       Please, fill this form, and we will reach out to you.
                     </p>
 
                     <form onSubmit={handleSubmit} action="" className="flex flex-col gap-2">
-                      <input type="text" className="w-full h-[45px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none" placeholder="FullName" name="name" value={formData.name} onChange={handleChange} required />
+                      <input type="text" className="w-full h-[45px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none bg-[#ffffff]" placeholder="FullName" name="name" value={formData.name} onChange={handleChange} required />
 
-                      <input type="email" className="w-full h-[45px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none" placeholder="Email" name="email" value={formData.email} onChange={handleChange} required />
+                      <input type="email" className="w-full h-[45px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none bg-[#ffffff]" placeholder="Email" name="email" value={formData.email} onChange={handleChange} required />
 
-                      <input type="number" className="w-full h-[45px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none" placeholder="Phone Number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} required />
+                      <input type="number" className="w-full h-[45px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none bg-[#ffffff]" placeholder="Phone Number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} required />
 
-                      <textarea className="w-full h-[105px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none" placeholder="Prayer Request" name="prayer" value={formData.prayer} onChange={handleChange} required />
+                      <textarea className="w-full h-[105px] border-[#919090] border-[1px] rounded-md p-2 text-[13px] outline-none bg-[#ffffff]" placeholder="Prayer Request" name="prayer" value={formData.prayer} onChange={handleChange} required />
 
                       {/* <button className="w-full h-[45px] bg-[#23a1db] border-[1px] rounded-md p-2 text-[13px] outline-none hover:bg-white hover:border-[1px] hover:border-[#23a1db] text-white hover:text-[#23a1db] transition-all duration-700 ease-in-out" type="submit">
                         {loading ? "Loading" : "Submit"}

@@ -7,7 +7,7 @@ import mixlr from "../../assets/images/logo/mixlr.png";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[60vh pt-[30px] bg- flex flex-col justify-center items-center font-pop shadow-md">
+    <div className="w-full h-[60vh pt-[30px] bg- flex flex-col justify-center items-center font-pop shadow-md bg-[#ffffff]">
       <div className="w-[90%] flex flex-col md:flex-row gap-8 mb-[25px] md:mb-">
 
         <div className="flex flex-col gap-5 w-full md:w-[40%] ">

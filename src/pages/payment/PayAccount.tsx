@@ -15,15 +15,15 @@ const PayAccount = () => {
 
                 <div className="text-[20px] lg:text-[23px] flex flex-col items-center md:items-start bg-[#000000] p-[14px]">
                     {/* <h6 className="font-bold">FIRST BANK</h6> */}
-                    <h6 className="font-bold text-[#d5d2d2] text-[18px] md:text-30px]">Naira (N) <br /><span className="text-[24px] text-[#ffffff]">0126808955</span></h6>
+                    <h6 className="font-bold text-[#d5d2d2] text-[18px] md:text-30px]">Naira <br /><span className="text-[24px] text-[#ffffff]">0126808955</span></h6>
 
                     <hr className="w-full border-[2px] my-[4px]" />
 
-                    <h6 className="font-bold text-[#d5d2d2] text-[18px] md:text-30px]">Naira ($) <br /><span className="text-[24px] text-[#ffffff]">0622056117</span></h6>
+                    <h6 className="font-bold text-[#d5d2d2] text-[18px] md:text-30px]">Dollar <br /><span className="text-[24px] text-[#ffffff]">0622056117</span></h6>
 
                     <hr className="w-full border-[2px] my-[4px]" />
                     
-                    <h6 className="font-bold text-[#d5d2d2] text-[18px] md:text-30px]">Pounds (#) <br /><span className="text-[24px] text-[#ffffff]">0622056100</span></h6>
+                    <h6 className="font-bold text-[#d5d2d2] text-[18px] md:text-30px]">Pounds <br /><span className="text-[24px] text-[#ffffff]">0622056100</span></h6>
 
                     <hr className="w-full border-[2px] my-[4px]" />
 

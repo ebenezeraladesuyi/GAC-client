@@ -7,6 +7,7 @@ import paystack from "../../assets/images/pay/paystack.png";
 
 const PaymentForm: React.FC = () => {
   const [amount, setAmount] = useState<number>(0);
+  const [email, setEmail] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 
   const publicKey = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY as string;
@@ -15,13 +16,11 @@ const PaymentForm: React.FC = () => {
     console.log('Payment success:', response);
     setLoading(false);
 
-    
     toast.success('Payment successful! 🎉', {
       position: 'top-center',
       autoClose: 3000,
     });
 
-    // ✅ Refresh page after short delay
     setTimeout(() => {
       window.location.reload();
     }, 3500);
@@ -37,6 +36,25 @@ const PaymentForm: React.FC = () => {
   };
 
   const handleBeforePayment = () => {
+    // Validate email before proceeding
+    if (!email || !isValidEmail(email)) {
+      toast.error('Please enter a valid email address', {
+        position: 'top-center',
+        autoClose: 3000,
+      });
+      setLoading(false);
+      return;
+    }
+
+    if (amount <= 0) {
+      toast.error('Please enter a valid amount', {
+        position: 'top-center',
+        autoClose: 3000,
+      });
+      setLoading(false);
+      return;
+    }
+
     setLoading(true);
     toast.info('Initializing payment...', {
       position: 'top-center',
@@ -44,8 +62,13 @@ const PaymentForm: React.FC = () => {
     });
   };
 
+  const isValidEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const componentProps = {
-    email: 'user@example.com',
+    email: email, // Use the email from state
     amount: amount * 100,
     publicKey,
     text: loading ? 'Processing...' : 'Pay Now',
@@ -54,10 +77,17 @@ const PaymentForm: React.FC = () => {
     onClick: handleBeforePayment,
   };
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleAmountChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
-    setAmount(parseFloat(value));
+    setAmount(parseFloat(value) || 0);
   };
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    setEmail(value);
+  };
+
+  const isFormValid = email && isValidEmail(email) && amount > 0;
 
   return (
     <div className="w-full flex justify-center items-center">
@@ -66,32 +96,67 @@ const PaymentForm: React.FC = () => {
           <img src={paystack} alt="Paystack Logo" />
         </div>
 
-        <label htmlFor="amountInput" className="text-[#000000]">
-          Enter Amount (NGN)
-        </label>
-        <input
-          type="number"
-          id="amountInput"
-          value={amount}
-          onChange={handleChange}
-          min="1"
-          step="0.01"
-          className="w-full h-[40px] border border-gray-200 rounded-md px-[10px] bg-[#ffffff] text-[#000000]"
-          required
-          disabled={loading}
-        />
+        {/* Email Input */}
+        <div className="w-full">
+          <label htmlFor="emailInput" className="text-[#000000] block mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="emailInput"
+            value={email}
+            onChange={handleEmailChange}
+            placeholder="Enter your email"
+            className="w-full h-[40px] border border-gray-200 rounded-md px-[10px] bg-[#ffffff] text-[#000000] focus:outline-none focus:ring-2 focus:ring-[#23a1db] focus:border-transparent"
+            required
+            disabled={loading}
+          />
+          {email && !isValidEmail(email) && (
+            <p className="text-red-500 text-sm mt-1">Please enter a valid email address</p>
+          )}
+        </div>
+
+        {/* Amount Input */}
+        <div className="w-full">
+          <label htmlFor="amountInput" className="text-[#000000] block mb-2">
+            Enter Amount (NGN)
+          </label>
+          <input
+            type="number"
+            id="amountInput"
+            value={amount}
+            onChange={handleAmountChange}
+            min="1"
+            step="0.01"
+            placeholder="0.00"
+            className="w-full h-[40px] border border-gray-200 rounded-md px-[10px] bg-[#ffffff] text-[#000000] focus:outline-none focus:ring-2 focus:ring-[#23a1db] focus:border-transparent"
+            required
+            disabled={loading}
+          />
+          {amount <= 0 && (
+            <p className="text-red-500 text-sm mt-1">Please enter a valid amount</p>
+          )}
+        </div>
 
         <PaystackButton
           className={`w-full h-[40px] rounded-md text-white font-medium transition-all duration-300 ${
-            loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#23a1db] hover:bg-[#1d8dc5]'
+            loading 
+              ? 'bg-gray-400 cursor-not-allowed' 
+              : isFormValid
+                ? 'bg-[#23a1db] hover:bg-[#1d8dc5] cursor-pointer'
+                : 'bg-gray-400 cursor-not-allowed'
           }`}
           {...componentProps}
-          // disabled={loading || amount <= 0}
         />
+        
+        {/* Display confirmation */}
+        {email && isValidEmail(email) && amount > 0 && (
+          <div className="text-sm text-gray-600 mt-2 text-center">
+            Payment confirmation will be sent to: <br />
+            <span className="font-medium">{email}</span>
+          </div>
+        )}
       </div>
-
-      {/* ✅ Toast Container */}
-      {/* <ToastContainer /> */}
     </div>
   );
 };
